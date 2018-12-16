@@ -1,0 +1,70 @@
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+.overlay {
+    background: #e9e9e9;  <- I left your 'gray' background
+    display: none;        <- Not displayed by default
+    position: absolute;   <- This and the following properties will
+    top: 0;                  make the overlay, the element will expand
+    right: 0;                so as to cover the whole body of the page
+    bottom: 0;
+    left: 0;
+    opacity: 0.5;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #062a30;
+    background-repeat:repeat-x;
+    text-shadow: 1px 1px 3px #80808;
+    background-image: -webkit-linear-gradient(top, #E0AF5C, #7ABCD1);
+    background-image: linear-gradient(to bottom, #E0AF5C, #7ABCD1);
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+
+nav ul {
+  text-align: left;
+  background-color: lavender;
+}
+
+nav h1{
+
+  display: inline-block;
+  margin: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-right:65px;
+  text-align: left;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-right:65px;
+  text-align: right;
+}
+
+nav ul li a {
+text-decoration: underline;
+  margin-right:5px;
+}
+
+#intro, #images,#contact{
+  padding-top: 20px;
+    padding-bottom: 20px;
+}
